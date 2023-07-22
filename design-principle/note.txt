@@ -1,0 +1,125 @@
+SOLID Principles Java
+-------------------------
+In Java, SOLID principles are an object-oriented approach that are applied to software structure design. 
+It is conceptualized by Robert C. Martin (also known as Uncle Bob). 
+These five principles have changed the world of object-oriented programming, 
+and also changed the way of writing software. It also ensures that the software is modular, easy to understand, debug, and refactor. In this section, we will discuss SOLID principles in Java with proper example.
+
+The word SOLID acronym for:
+
+Single Responsibility Principle (SRP)
+Open-Closed Principle (OCP)
+Liskov Substitution Principle (LSP)
+Interface Segregation Principle (ISP)
+Dependency Inversion Principle (DIP)
+
+Single Responsibility Principle
+-------------------------------
+The single responsibility principle states that every Java class must perform a single functionality. 
+Implementation of multiple functionalities in a single class mashup 
+the code and if any modification is required may affect the whole class. 
+It precise the code and the code can be easily maintained.
+
+Open-Closed Principle
+----------------------
+The application or module entities the methods, functions, variables, etc. 
+The open-closed principle states that according to new requirements the module 
+should be open for extension but closed for modification. 
+The extension allows us to implement new functionality to the module. 
+
+Liskov Substitution Principle
+---------------------------------
+The Liskov Substitution Principle (LSP) was introduced by Barbara Liskov. 
+It applies to inheritance in such a way that the derived classes must be completely 
+substitutable for their base classes. In other words, if class A is a subtype of class B, 
+then we should be able to replace B with A without interrupting the behavior of the program.
+
+Interface Segregation Principle
+------------------------------
+The principle states that the larger interfaces split into smaller ones. 
+Because the implementation classes use only the methods that are required. 
+We should not force the client to use the methods that they do not want to use.
+The goal of the interface segregation principle is similar to the single responsibility principle. 
+
+
+Dependency Inversion Principle
+---------------------------
+The principle states that we must use abstraction (abstract classes and interfaces) 
+instead of concrete implementations. High-level modules should not depend on the low-level 
+module but both should depend on the abstraction. Because the abstraction does not depend on 
+detail but the detail depends on abstraction. It decouples the software.
+
+Why should we use SOLID principles?
+-----------------------------------
+It reduces the dependencies so that a block of code can be changed without affecting the other code blocks.
+The principles intended to make design easier, understandable.
+By using the principles, the system is maintainable, testable, scalable, and reusable.
+It avoids the bad design of the software.
+
+DRY Principle
+---------------------
+
+DRY stands for Don’t Repeat Yourself. In the book ‘The Pragmatic Programmer’, 
+we can see this definition for DRY:
+
+Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+
+This means that you should not have duplicated code. It’s easier to maintain a code that is only in one place, 
+because if you need to change something in the code, you just need to change in one place. Besides that, 
+if you have the same code in two or more places, the chance of this code become 
+different during the time is high, and when this happens it will become an easy way to 
+introduce bugs in your system. Duplicated code also makes the code more complex and unnecessarily larger.
+
+You also should not write ambiguous code. Your classes, your variables, your functions, 
+they should have a specific name, and their name must match their responsibility. If you have a function, 
+you should know what the function does by just reading its name, 
+without being needed to read the code inside of it.
+
+In the book ‘The Pragmatic Programmer’ we also can see that:
+
+DRY is about the duplication of knowledge, of intent. It’s about expressing
+the same thing in two different places, possibly in two totally different ways
+
+It means that it’s not only about copy and past code — yes, this is also included - 
+but goes beyond that. It‘s also about having different code that does the same thing. 
+Maybe you can have different code in two or more places, but they do the same thing in different ways, 
+this also should be avoided.
+
+
+KISS Principle
+-----------------
+KISS is an acronym for Keep It Simple, Stupid. This principle says about to make your code simple. 
+You should avoid unnecessary complexity. A simple code it’s easier to maintain and easier to understand.
+
+You can apply this principle in the design and in the implementation of the code. 
+You should eliminate duplicated code, should remove unnecessary features, don’t use 
+unnecessary variables and methods, use names for variables and methods that makes sense and 
+matches their responsibilities, and always when it’s possible, follow know standards of code development. 
+You also should separate the responsibilities of your classes and the 
+responsibilities from the layers of the project.
+
+Sometimes you don’t need to implement something new to attend your needs, 
+you can simply make use of the features of the programming language that you are using. 
+For that, it’s good that you know the features of the programming language that you are working with.
+
+If you are working in a code that it’s already implemented, 
+and you see something that it’s not necessary or could be simpler, you should consider re-factoring it.
+
+YAGNI Principle
+-------------------
+YAGNI stands for You Ain’t Gonna Need It. It’s a principle from software development 
+methodology of Extreme Programming (XP). This principle says that you should not create 
+features that it’s not really necessary.
+
+This principle it’s similar to the KISS principle, once that both of them aim for a simpler solution. 
+The difference between them it’s that YAGNI focus on removing unnecessary functionality and logic, 
+and KISS focus on the complexity.
+
+Ron Jeffries, one of the co-founders of the XP, once said:
+
+Always implement things when you actually need them, never when you just foresee that you need them.
+
+It means that you should not implement functionality just because you think that you may need it someday,
+ but implement it just when you really need it. 
+ Doing that you will avoid spending time with implementations that were not even necessary, 
+ and maybe will never be used.
